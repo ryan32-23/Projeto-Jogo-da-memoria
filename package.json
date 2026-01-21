@@ -1,0 +1,15 @@
+{
+  "name": "jogo-da-memoria",
+  "version": "1.0.0",
+  "description": "Um jogo da memória em JavaScript rodando no terminal",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": ["jogo", "memoria", "terminal"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
