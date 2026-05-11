@@ -1,0 +1,86 @@
+body {
+    font-family: 'Pacifico', cursive;
+    background-image: url("./assets/background2.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+.placar {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.pares, .erros {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.carta {
+    width: 80px;
+    height: 80px;
+    background-color: #4CAF50;
+    border: 2px solid #45a049;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carta:hover {
+    background-color: #45a049;
+}
+
+.carta.virada {
+    background-color: white;
+    border-color: #ddd;
+}
+
+.mensagem {
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+    min-height: 24px;
+}
+
+.reiniciar {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reiniciar:hover {
+    background-color: #0b7dda;
+}
